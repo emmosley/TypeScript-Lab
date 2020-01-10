@@ -1,0 +1,17 @@
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+.completeButton {
+    border: 1px solid #ff1493;
+    border-radius: 10%;
+    background-color: white;
+    color: #ff1493;
+}
+
+.xBox {
+    background-color: transparent;
+    color: #bbb;
+    border: none;
+    float: right;
+}

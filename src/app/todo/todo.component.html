@@ -1,0 +1,7 @@
+<ol>
+    <li *ngFor="let task of tasks"> 
+      <button *ngIf = !task.completed class = "completeButton">Complete</button> 
+       <span [ngClass]="{strikeThrough: task.completed}">{{ task.task }} </span>
+       <button class="xBox" >X</button>
+    </li>   
+</ol>
