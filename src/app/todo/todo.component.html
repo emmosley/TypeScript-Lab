@@ -1,7 +1,10 @@
 <ol>
+    <input type="text" class="filter" [(ngModel)]="filterTask" placeholder="filter your to-dos">
     <li *ngFor="let task of tasks"> 
-      <button *ngIf = !task.completed class = "completeButton">Complete</button> 
+        <div *ngIf="searchTasks(filterTask, task)">
+      <button *ngIf = !task.completed class = "completeButton" (click)="completeTask(task)">Complete</button> 
        <span [ngClass]="{strikeThrough: task.completed}">{{ task.task }} </span>
-       <button class="xBox" >X</button>
-    </li>   
+       <button class="xBox" (click)="removeTask(task)">X</button>
+        </div>
+    </li>  
 </ol>

@@ -9,3 +9,11 @@ export const tasks = [
  completed: true
 },
 ]
+
+  
+export class taskModel {
+    task: string;
+    complete: boolean;
+    taskClass: string;
+    isVisible: boolean;
+}

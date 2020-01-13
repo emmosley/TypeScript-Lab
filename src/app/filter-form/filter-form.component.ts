@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { tasks } from "../tasks";
 
 @Component({
   selector: 'app-filter-form',

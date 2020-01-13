@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { tasks } from "../tasks";
-// import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-to-do-form',
